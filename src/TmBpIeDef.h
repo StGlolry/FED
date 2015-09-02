@@ -1,0 +1,52 @@
+#pragma once
+//#include "TmBpDef.h"
+
+// {f414c260-6ac0-11cf-b6d1-00aa00bbbb58}
+DEFINE_GUID(CLSID_JScript,  0xf414c260, 0x6ac0,  0x11cf, 0xb6, 0xd1, 0x00, 0xaa, 0x00, 0xbb, 0xbb, 0x58);
+#define szCLSID_JScript  "{f414c260-6ac0-11cf-b6d1-00aa00bbbb58}"
+
+//#define TMBP_SWF_CLSID_STR L"CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000"
+DEFINE_GUID(CLSID_Flash,  0xD27CDB6E, 0xAE6D,  0x11CF, 0x96, 0xB8, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00);
+#define szCLSID_Flash  "{D27CDB6E-AE6D-11CF-96B8-444553540000}"
+
+// {16d51579-a30b-4c8b-a276-0ff4dc41e755}
+DEFINE_GUID(CLSID_JScript9, 0x16d51579, 0xa30b,  0x4c8b, 0xa2, 0x76, 0x0f, 0xf4, 0xdc, 0x41, 0xe7, 0x55);
+#define szCLSID_JScript9 "{16d51579-a30b-4c8b-a276-0ff4dc41e755}"
+
+// {B54F3741-5B07-11cf-A4B0-00AA004A55E8}
+DEFINE_GUID(CLSID_VBScript, 0xb54f3741, 0x5b07, 0x11cf, 0xa4, 0xb0, 0x0, 0xaa, 0x0, 0x4a, 0x55, 0xe8);
+#define szCLSID_VBScript "{B54F3741-5B07-11cf-A4B0-00AA004A55E8}"
+
+/* HKEY_CLASSES_ROOT\CLSID\{1b7cd997-e5ff-4932-a7a6-2a9e636da385}
+C:\Windows\System32\Chakra.dll
+*/
+DEFINE_GUID(CLSID_Chakra, 0x1b7cd997, 0xe5ff, 0x4932, 0xa7, 0xa6, 0x2a, 0x9e, 0x63, 0x6d, 0xa3, 0x85);
+#define szCLSID_Chakra "{1b7cd997-e5ff-4932-a7a6-2a9e636da385}"
+
+// {518864D3-E3EE-4670-B568-3D1D8FB3E307}
+DEFINE_GUID(CLSID_TMBPIE_JSTUB,  0x518864d3, 0xe3ee, 0x4670, 0xb5, 0x68, 0x3d, 0x1d, 0x8f, 0xb3, 0xe3, 0x7);
+
+// {FE9F7F49-D3CE-4562-AA7D-33B2F994B621}
+DEFINE_GUID(CLSID_TMBPIE_VBSTUB, 0xfe9f7f49, 0xd3ce, 0x4562, 0xaa, 0x7d, 0x33, 0xb2, 0xf9, 0x94, 0xb6, 0x21);
+
+#define TMBP_IEJS_DLLNAME   L"jscript.dll"
+#define TMBP_IEJS9_DLLNAME  L"jscript9.dll"
+#define TMBP_IEVBS_DLLNAME  L"vbscript.dll"
+#define TMBP_IECHAKRA_DLLNAME  L"Chakra.dll"
+
+#define TMBP_IE_CONFIGCHANGE_EVENT L"208D"
+#define TMBP_IE_DETECTION_NOTIFY_EVENT L"208E"
+#define TMBP_IE_WAKEUP_SAL_EVENT L"208F"
+
+#define TMBP_IE_DLL_NAME_32 L"TmBpIe32.dll"
+#define TMBP_IE_DLL_NAME_64 L"TmBpIe64.dll"
+#define TMBP_IE_LANG_FILE_NAME L"TmBpIeBHO.lang" 
+
+#define TMBP_INSTALL_TOOL   L"regsvr32.exe"
+
+
+#define TMBP_JAVA_CLSID_STR L"CLSID:8AD9C840-044E-11D1-B3E9-00805F499D93"
+#define TMBP_SWF_CLSID_STR L"CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000"
+
+#define TMBP_PDF_MIME_TYPE_STR  L"application/pdf"
+#define TMBP_PDF_MIME_TYPE_X_STR  L"application/x-pdf"
