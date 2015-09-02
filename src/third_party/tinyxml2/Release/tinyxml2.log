@@ -1,13 +1,9 @@
-﻿Build started 2015/9/2 9:28:53.
-     1>Project "C:\Users\Peter_Pi\Desktop\FlashProtector_Code_Beta_1.07\third_party\tinyxml2\tinyxml2.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt tinyxml2.cpp
-         tinyxml2.cpp
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Peter_Pi\Desktop\FlashProtector_Code_Beta_1.07\Release\tinyxml2.lib" /NOLOGO /LTCG Release\tinyxml2.obj
-         tinyxml2.vcxproj -> C:\Users\Peter_Pi\Desktop\FlashProtector_Code_Beta_1.07\Release\tinyxml2.lib
-     1>Done Building Project "C:\Users\Peter_Pi\Desktop\FlashProtector_Code_Beta_1.07\third_party\tinyxml2\tinyxml2.vcxproj" (Build target(s)).
+﻿Build started 2015/9/2 10:12:48.
+     1>Project "D:\GitHub\FED\FED\src\third_party\tinyxml2\tinyxml2.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         tinyxml2.vcxproj -> D:\GitHub\FED\FED\src\Release\tinyxml2.lib
+     1>Done Building Project "D:\GitHub\FED\FED\src\third_party\tinyxml2\tinyxml2.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.06
+Time Elapsed 00:00:00.03

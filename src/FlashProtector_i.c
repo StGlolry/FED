@@ -6,7 +6,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0595 */
-/* at Wed Sep 02 09:28:54 2015
+/* at Wed Sep 02 10:10:48 2015
  */
 /* Compiler settings for FlashProtector.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0595 

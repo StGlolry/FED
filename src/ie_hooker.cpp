@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "tmbp_ie_hooker.h"
+#include "ie_hooker.h"
 
 #include <atlbase.h>
 #include <InitGuid.h>
 #include <GuidDef.h>
 #include <activscp.h>
 
-#include "TmBpIeDef.h"
+#include "GlobalDef.h"
 #include "logger.h"
 #include "module_finder.h"
 
@@ -42,7 +42,7 @@ typedef
 
 
 HRESULT __stdcall
-	TMBP_CoCreateInstance(__in   REFCLSID rclsid,
+	FED_CoCreateInstance(__in   REFCLSID rclsid,
 	__in   LPUNKNOWN pUnkOuter,
 	__in   DWORD dwClsContext,
 	__in   REFIID riid,
@@ -72,12 +72,12 @@ HRESULT __stdcall
  	} else {
  		hr = orgin_func(rclsid, pUnkOuter, dwClsContext, riid, ppv);
  	}
- 	IEHooker::GetIEHooker()->ReHook(TMBP_CoCreateInstance);
+ 	IEHooker::GetIEHooker()->ReHook(FED_CoCreateInstance);
 	return hr;
 }
 
 HRESULT __stdcall
-	TMBP_CoGetClassObject(__in	 REFCLSID rclsid,
+	FED_CoGetClassObject(__in	 REFCLSID rclsid,
 	__in	 DWORD dwClsContext,
 	__in	 LPVOID pvReserved,
 	__in	 REFIID riid,
@@ -99,7 +99,7 @@ HRESULT __stdcall
 	}
 
 	HRESULT hr = orgin_func(rclsid, dwClsContext, pvReserved, riid, ppv);
-	IEHooker::GetIEHooker()->ReHook(TMBP_CoGetClassObject);
+	IEHooker::GetIEHooker()->ReHook(FED_CoGetClassObject);
 
 	if (IsEqualCLSID(rclsid, CLSID_Flash)) {
 		//LOG_TRACE_EX("!!!Find Flash CLSID");   
@@ -240,7 +240,7 @@ int IEHooker::Hook(bool is_use_custom_kernal_function) {
 
     hook_ret_code = hooker_.Hook("",
         "CoGetClassObject",
-        TMBP_CoGetClassObject,
+        FED_CoGetClassObject,
         1,
         "urlmon.dll",
         (void*)"IE");

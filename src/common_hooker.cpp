@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "common_hooker.h"
-//#include "TmBpDef.h"
 #include "HookImport.h"
 #include "logger.h"
 

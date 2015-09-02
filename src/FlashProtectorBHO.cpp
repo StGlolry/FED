@@ -4,7 +4,7 @@
 #include <atlcom.h>
 #include "FlashProtectorBHO.h"
 #include "logger.h"
-#include "tmbp_ie_hooker.h"
+#include "ie_hooker.h"
 #include "profile_helper.h"
 #include <Iepmapi.h> //IEIsProtectedModeProcess
 
