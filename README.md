@@ -8,3 +8,5 @@ You need create c:\fp\ first, and register the BHO to system. And download and b
 It is a tool for researchers not for users. May has some bugs in it.
 
 Detail information is in the PPT file.
+
+Wrote by @heisecode and @蓝冰_Lambda
